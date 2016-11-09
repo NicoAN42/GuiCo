@@ -1,5 +1,7 @@
 package id.sch.smktelkom_mlg.project.xirpl201101928.guico;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Button exit = (Button) findViewById(R.id.exit);
         exit.setOnClickListener(new View.OnClickListener() {
 
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public void onClick(View v) {
                 if(pencet == maxpress){
